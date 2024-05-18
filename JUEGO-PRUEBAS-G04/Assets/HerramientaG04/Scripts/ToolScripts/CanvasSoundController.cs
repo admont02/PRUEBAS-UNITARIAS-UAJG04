@@ -60,7 +60,24 @@ public class CanvasSoundController : MonoBehaviour
     public Queue<CanvasSound> Sounds { get { return _sounds; } }
     public GameObject CanvasCircleParent { get { return canvasCirclePos; } }
     public Dictionary<UInt64, GameObject> Indicators { get { return _indicators; } }
+    //public void ClearAll()
+    //{
+    //    Queue<UInt64> aux=new Queue<UInt64>();
+    //    foreach (KeyValuePair<UInt64,GameObject>gO in _indicators)
+    //    {
+    //        aux.Enqueue(gO.Key);
+    //    }
+    //    foreach(UInt64 i in aux)
+    //    {
+    //        GameObject go = _indicators[i];
+    //        _indicators.Remove(i);
+    //        Destroy(go);
 
+    //    }
+    //    aux.Clear();
+    
+            
+    //}
     public void AddIndicator(UInt64 id,GameObject go)
     {
         _indicators.Add(id,go);
