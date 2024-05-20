@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.g04.visualtool": {
-      "version": "file:C:/Users/Simona/Desktop/com.g04.visualtool",
+      "version": "file:../com.g04.visualtool",
       "depth": 0,
       "source": "local",
       "dependencies": {

@@ -15,7 +15,7 @@ public class SonidoPersonaje : MonoBehaviour
         }
 
         audioSource.clip = sonido;
-        InvokeRepeating("ReproducirSonido", 0, 5); // Inicia la repetición del sonido cada 2 segundos
+        InvokeRepeating("ReproducirSonido", 3, 5); // Inicia la repetición del sonido cada 2 segundos
     }
     private void Update()
     {

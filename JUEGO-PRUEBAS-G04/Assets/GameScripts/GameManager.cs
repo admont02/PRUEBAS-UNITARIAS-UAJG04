@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
     void UpdateScriptActivation()
     {
 
-        // Encontrar todas las instancias de MyScript en la escena
+        // Encontrar todas las instancias de Transmitter en la escena
         Transmitter[] scripts = FindObjectsOfType<Transmitter>();
 
         // Activar/desactivar cada instancia basado en herramientaActiva
@@ -36,8 +36,7 @@ public class GameManager : MonoBehaviour
         {
             script.enabled = herramientaActiva;
         }
-        Receiver list = FindObjectOfType<Receiver>();
-        list.enabled = herramientaActiva;
+       
         IndicatorController controller = FindObjectOfType<IndicatorController>();
         controller.ClearAll();
         controller.enabled = herramientaActiva;
